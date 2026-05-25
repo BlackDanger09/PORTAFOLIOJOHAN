@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johan Ospina — Creador Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── CURSOR -->
+  <div id="cur"></div>
+  <div id="cur-r"></div>
+
+  <!-- ── GLOBAL CHROME -->
+  <div id="topbar"></div>
+  <div id="prog"></div>
+  <div id="vignette"></div>
+  <div id="grain"></div>
+  <div id="flash"></div>
+
+  <!-- ══════════════════════════════════════════
+       INTRO SCREEN
+  ══════════════════════════════════════════ -->
+  <section id="intro">
+
+    <video id="intro-video" autoplay muted loop playsinline>
+      <source src="video/escritorio.mp4" type="video/mp4">
+    </video>
+    <div id="intro-bg"></div>
+
+    <div class="intro-content">
+      <span class="intro-eyebrow">Portafolio — 2025</span>
+      <p class="intro-label">My Portfolio</p>
+      <h1 class="intro-name">
+        <span>JOHAN</span>
+        <span>OSPINA</span>
+      </h1>
+      <button id="btn-start">INICIAR</button>
+      <p class="intro-hint">Usa el scroll para explorar el escritorio</p>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MAIN EXPERIENCE
+  ══════════════════════════════════════════ -->
+  <div id="main">
+
+    <!-- Section indicator -->
+    <div id="section-ind">
+      <div id="si-eye"></div>
+      <div id="si-name"></div>
+    </div>
+
+    <!-- Nav dots -->
+    <nav id="nav-dots">
+      <div class="ndot-wrap"><span class="ndot-label">Escritorio</span>    <div class="ndot" data-s="0"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">Diseño Gráfico</span><div class="ndot" data-s="1"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">3D Visual</span>     <div class="ndot" data-s="2"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">Audiovisual</span>   <div class="ndot" data-s="3"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">Social Media</span>  <div class="ndot" data-s="4"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">Sobre Mí</span>      <div class="ndot" data-s="5"></div></div>
+      <div class="ndot-wrap"><span class="ndot-label">Contacto</span>      <div class="ndot" data-s="6"></div></div>
+    </nav>
+
+    <!-- Scroll track + sticky stage -->
+    <div id="scroll-track">
+      <div id="stage">
+
+        <!-- Video principal — controlado por scroll -->
+        <video id="bg-video" muted playsinline preload="auto">
+          <source src="video/escritorio.mp4" type="video/mp4">
+        </video>
+
+        <!-- Fallback si no hay video -->
+        <div id="stage-fallback"></div>
+
+        <!-- Scrim oscuro -->
+        <div id="stage-scrim"></div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         PANELS DE HABILIDADES
+         ✏️ Edita el contenido de cada sección
+    ════════════════════════════════════════ -->
+
+    <!-- S0: Vista del escritorio -->
+    <div class="panel panel-r" id="p-s0">
+      <div class="sk-card">
+        <div class="sk-num">01 — Escritorio</div>
+        <div class="sk-title">Vista<br>General</div>
+        <div class="sk-desc">
+          El espacio donde todo cobra vida.
+          Cada objeto representa una habilidad diferente —
+          explora con el scroll para descubrirlas.
+        </div>
+      </div>
+    </div>
+
+    <!-- S1: Diseño Gráfico / Illustrator -->
+    <div class="panel panel-l" id="p-s1">
+      <div class="sk-card">
+        <div class="sk-num">02 — Diseño Gráfico</div>
+        <div class="sk-title">Ilustraciones<br>& Diseño</div>
+        <div class="sk-desc">
+          Diseñador gráfico especializado en ilustraciones vectoriales
+          y branding. Piezas visuales con carácter y coherencia.
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Programas</div>
+          <div class="sk-chips">
+            <!-- ✏️ Edita o agrega chips -->
+            <span class="chip">Adobe Illustrator</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">InDesign</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Proyectos</div>
+          <div class="sk-projects">
+            <!-- ✏️ Edita nombre y tipo de proyecto -->
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">Identidad Visual — Marca X</span>
+              <span class="project-tag">Branding</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">Campaña Coca-Cola</span>
+              <span class="project-tag">Ilustración</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name"></span>
+              <span class="project-tag">Tipo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S2: Modelado 3D -->
+    <div class="panel panel-r" id="p-s2">
+      <div class="sk-card">
+        <div class="sk-num">03 — 3D Visual</div>
+        <div class="sk-title">Modelado<br>3D</div>
+        <div class="sk-desc">
+          Modelo en Blender — personajes, assets y escenarios completos.
+          Creo mundos tridimensionales desde cero con render cinematográfico
+          y materiales PBR.
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Programas</div>
+          <div class="sk-chips">
+            <!-- ✏️ Edita -->
+            <span class="chip">Blender</span>
+            <span class="chip">Cycles Render</span>
+            <span class="chip">EEVEE</span>
+            <span class="chip">Substance 3D</span>
+          </div>
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Proyectos</div>
+          <div class="sk-projects">
+            <!-- ✏️ Edita -->
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">Escritorio 3D — Portafolio</span>
+              <span class="project-tag">Escenario</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">Bearbrick Custom</span>
+              <span class="project-tag">Personaje</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">Agrega tu proyecto aquí</span>
+              <span class="project-tag">Tipo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S3: Cámara / Audiovisual -->
+    <div class="panel panel-l" id="p-s3">
+      <div class="sk-card">
+        <div class="sk-num">04 — Audiovisual</div>
+        <div class="sk-title">Creador<br>de Contenido</div>
+        <div class="sk-desc">
+          Video, fotos y edición de video. Producción audiovisual completa —
+          del concepto al corte final para marcas y proyectos digitales.
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Programas</div>
+          <div class="sk-chips">
+            <!-- ✏️ Edita -->
+            <span class="chip">Premiere Pro</span>
+            <span class="chip">DaVinci Resolve</span>
+            <span class="chip">After Effects</span>
+            <span class="chip">Lightroom</span>
+          </div>
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Proyectos</div>
+          <div class="sk-projects">
+            <!-- ✏️ Edita -->
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name"></span>
+              <span class="project-tag">Video</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name"></span>
+              <span class="project-tag">Foto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S4: Celular / Social Media -->
+    <div class="panel panel-r" id="p-s4">
+      <div class="sk-card">
+        <div class="sk-num">05 — Social Media</div>
+        <div class="sk-title">Edición<br>de Video</div>
+        <div class="sk-desc">
+          Reels, TikToks y contenido vertical que detiene el scroll.
+          Ritmo, narrativa y efectos que conectan con la audiencia.
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Programas</div>
+          <div class="sk-chips">
+            <!-- ✏️ Edita -->
+            <span class="chip">CapCut</span>
+            <span class="chip">Premiere</span>
+            <span class="chip">TikTok</span>
+            <span class="chip">Reels</span>
+            <span class="chip">Shorts</span>
+          </div>
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Proyectos</div>
+          <div class="sk-projects">
+            <!-- ✏️ Edita -->
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name"></span>
+              <span class="project-tag">Reel</span>
+            </div>
+            <div class="project-item">
+              <span class="project-dot"></span>
+              <span class="project-name">https://www.tiktok.com/@johxn_ob?_r=1&_t=ZS-96fNLFFbnJE</span>
+              <span class="project-tag">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S5: Sobre Mí -->
+    <div class="panel panel-l" id="p-s5">
+      <div class="sk-card sk-card--wide">
+        <div class="sk-num">06 — Sobre Mí</div>
+        <div class="sk-title">Johan<br>Ospina</div>
+
+        <!-- ✏️ ESCRIBE TU BIO AQUÍ -->
+        <div class="sk-desc">
+          Soy Johan Ospina, estudiante de Creación Digital 
+  nacido y criado en Bogotá con una obsesión por 
+  contar historias a través de la imagen en movimiento.
+          <br><br>
+          <span class="placeholder-text">
+            Me mueve el video — la forma en que un corte, 
+  una canción o un efecto pueden cambiar completamente 
+  cómo alguien siente algo. Trabajo con creadores 
+  independientes ayudándoles a darle vida visual 
+  a sus ideas, desde el concepto hasta el render final.
+  <br><br>
+  Mi meta es construir mi propia marca personal y 
+  crear contenido que refleje mi visión — un universo 
+  propio donde el diseño, el 3D y el video conviven 
+  en el mismo espacio. Este portafolio es el primer 
+  paso de ese mundo.
+          </span>
+        </div>
+
+        <div class="sk-block">
+          <div class="sk-block-label">Habilidades</div>
+          <div class="sk-chips">
+            <!-- ✏️ Edita -->
+            <span class="chip">Diseño Gráfico</span>
+            <span class="chip">3D</span>
+            <span class="chip">Video</span>
+            <span class="chip">Fotografía</span>
+            <span class="chip">Branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S6: Contacto -->
+    <div class="panel panel-c" id="p-s6">
+      <div class="contact-card">
+        <div class="contact-eye">Trabajemos juntos</div>
+        <h2 class="contact-title">Contáctame</h2>
+
+        <div class="c-links">
+
+          <!-- ✏️ Reemplaza con tu email -->
+          <a class="c-link" href="mailto:tuemail@ejemplo.com">
+            <div class="c-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
+            </div>
+            <div class="c-info">
+              <div class="c-info-label">Email</div>
+              <div class="c-info-val">ospinajohan160@gmail.com</div>
+            </div>
+            <svg class="c-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <!-- ✏️ Reemplaza con tu @ de Instagram -->
+          <a class="c-link" href="https://www.instagram.com/johxn_ob?igsh=ZzM0b2Y2Njg2bHJy&utm_source=qr" target="_blank">
+            <div class="c-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <div class="c-info">
+              <div class="c-info-label">Instagram</div>
+              <div class="c-info-val">@johxn_ob</div>
+            </div>
+            <svg class="c-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <!-- ✏️ Reemplaza con tu número -->
+          <a class="c-link" href="https://wa.me/573183851478" target="_blank">
+            <div class="c-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div class="c-info">
+              <div class="c-info-label">WhatsApp</div>
+              <div class="c-info-val">+57 3183851478</div>
+            </div>
+            <svg class="c-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+        </div>
+
+        <button id="btn-top">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M6 10V2M2 6l4-4 4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          Volver al Inicio
+        </button>
+
+      </div>
+    </div>
+
+  </div><!-- /main -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
