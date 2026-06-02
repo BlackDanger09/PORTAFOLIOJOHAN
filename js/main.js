@@ -20,28 +20,28 @@ const SECTIONS = [
     name:      'Vista General',
   },
   {
-    videoTime: 0,     // ── Diseño gráfico — mismo frame inicial, panel diferente
+    videoTime: 3.39,     // ── Diseño gráfico — mismo frame inicial, panel diferente
     scrim:     0.28,
     panel:     'p-s1',
     eye:       '02 — Diseño Gráfico',
     name:      'Ilustraciones',
   },
   {
-    videoTime: 4,     // ── Segundo 4 → Modelado 3D
+    videoTime: 5.04,     // ── Segundo 4 → Modelado 3D
     scrim:     0.30,
     panel:     'p-s2',
     eye:       '03 — 3D Visual',
     name:      'Modelado 3D',
   },
   {
-    videoTime: 4,     // ── Segundo 4 → Cámara / Audiovisual
+    videoTime: 6.58,     // ── Segundo 4 → Cámara / Audiovisual
     scrim:     0.35,
     panel:     'p-s3',
     eye:       '04 — Audiovisual',
     name:      'Creador de Contenido',
   },
   {
-    videoTime: 8,     // ── Segundo 8 → Celular / Social Media
+    videoTime: 8.43,     // ── Segundo 8 → Celular / Social Media
     scrim:     0.30,
     panel:     'p-s4',
     eye:       '05 — Social Media',
